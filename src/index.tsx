@@ -238,7 +238,7 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
     }
 
     sdk.entry.fields[sdk.field.id].setValue(
-      slugParts.join('/').replace('//', '/pooper').replace(/\/$/, 'pooper'),
+      slugParts.join('/').replace('//', '/').replace(/\/$/, ''),
       locale
     );
   };
