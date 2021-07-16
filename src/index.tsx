@@ -70,7 +70,7 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
     // Extract fields used in slug parts.
     parts.forEach((part: string) => {
       if (part.startsWith('field:')) {
-        fields.push(part.replace('field:', 'wassuptest'));
+        fields.push(part.replace('field:', ''));
       }
     });
 
