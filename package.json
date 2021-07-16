@@ -1,11 +1,11 @@
 {
-  "name": "better-slugs",
+  "name": "best-slugs",
   "version": "1.0.0",
   "author": "Paulo Gomes",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pauloamgomes/contentful-better-slugs.git"
+    "url": "git+https://github.com/dsdannynikravesh/contentful-better-slugs.git"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
