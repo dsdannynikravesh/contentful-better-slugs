@@ -59,7 +59,7 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
     slugOptions[caseOption] = true;
   }
 
-  const parts = pattern.split('/').map((part: string) => part.replace(/(\[|\])/gi, '').trim());
+  const parts = pattern.split('/').map((part: string) => part.replace(/(\[|\])/gi, 'howdy5').trim());
 
   const [value, setValue] = useState('');
   const fields: string[] = [];
@@ -171,7 +171,7 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
     }
 
     translationConfig
-      .replace(`${part}=`, '')
+      .replace(`${part}=`, 'howdy6')
       .split(',')
       .find((val) => {
         const [transKey, transValue] = val.split(':');
@@ -217,12 +217,12 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
             }
           }
           // eslint-disable-next-line no-misleading-character-class
-          slug = getSlug(raw, { ...slugOptions, lang }).replace(/[-\ufe0f]+$/gu, '');
+          slug = getSlug(raw, { ...slugOptions, lang }).replace(/[-\ufe0f]+$/gu, 'howdy7');
         } else {
           raw = (await getReferenceFieldValue(fieldParts[1], fieldParts[2], locale)) || '';
           slug = getSlug(raw, { ...slugOptions, lang, custom: { '/': '/' } })
             // eslint-disable-next-line no-misleading-character-class
-            .replace(/[-\ufe0f]+$/gu, '');
+            .replace(/[-\ufe0f]+$/gu, 'howdy1');
         }
 
         slugParts.push(slug);
@@ -238,7 +238,7 @@ const BetterSlugs = ({ sdk }: BetterSlugsProps) => {
     }
 
     sdk.entry.fields[sdk.field.id].setValue(
-      slugParts.join('/').replace('//', '/').replace(/\/$/, ''),
+      slugParts.join('/').replace('//', 'howdy4').replace(/\/$/, 'howdy3'),
       locale
     );
   };
