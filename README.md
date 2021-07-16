@@ -25,8 +25,8 @@ The UI Extension can be installed manually from the Contentful UI following the 
 
 1. Navigate to Settings > Extensions
 2. Click on "Add extension > Install from Github"
-3. Use `https://raw.githubusercontent.com/pauloamgomes/contentful-better-slugs/master/extension.json` in the url
-4. On the extension settings screen change Hosting to Self-hosted using the url `https://pauloamgomes.github.io/contentful-better-slugs/`
+3. Use `https://raw.githubusercontent.com/dsdannynikravesh/contentful-better-slugs/master/extension.json` in the url
+4. On the extension settings screen change Hosting to Self-hosted using the url `https://dsdannynikravesh.github.io/contentful-better-slugs/`
 
 ## Usage
 
